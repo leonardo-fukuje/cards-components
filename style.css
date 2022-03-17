@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(230, 224, 224);
+}
+
 :root {
   --bright-orange: hsl(31, 77%, 52%);
   --dark-cyan: hsl(184, 100%, 22%);
@@ -23,12 +27,16 @@ h3 {
 }
 
 p {
-  margin-bottom: 35px;
+  line-height: 1.8;
+  margin-bottom: 25px;
   font-family: "lexend Deca";
   font-weight: 400;
 }
 .container {
-  margin: 50px 40px;
+  margin: 50px auto;
+  width: auto;
+  min-width: 300px;
+  max-width: 300px;
 }
 
 .btn {
@@ -47,10 +55,8 @@ p {
 }
 
 .card {
-  background-color: aquamarine;
   padding: 25px 40px;
   color: white;
-  min-width: 300px;
 }
 
 .sedan {
@@ -67,8 +73,20 @@ p {
   border-radius: 0px 0px 10px 10px;
 }
 
+.btn-color-1 {
+  color: var(--bright-orange);
+}
+
+.btn-color-2 {
+  color: var(--dark-cyan);
+}
+
+.btn-color-3 {
+  color: var(--very-dark-cyan);
+}
+
 /* Utilizando media query */
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .container {
     display: flex;
     align-items: center;
@@ -84,5 +102,10 @@ p {
 
   .luxury {
     border-radius: 0px 10px 10px 0;
+  }
+
+  p {
+    line-height: 1.8;
+    margin-bottom: 80px;
   }
 }
